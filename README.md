@@ -1,5 +1,5 @@
 ### notes
-~~this is my neovim nix config using mnw (minimal neovim wrapper). ~~
+~~this is my neovim nix config using mnw (minimal neovim wrapper).~~
 
 ~~ive made the design architecture idiomatic to normal neovim, so the root directory of this project is AS IF one was in .config/nvim~~
 ~~this is much more preferable to mnw's way of handling things. this leads to calling an init.lua at the root, having a lua/ folder at the root, etc.~~
@@ -21,5 +21,4 @@ big tasks:
 
 maybe ill just add a neovim module in my nixos dotfiles
 things ill keep in mind for the wrapper:
-packages:
 - fzf, fd, ripgrep (for telescope)
