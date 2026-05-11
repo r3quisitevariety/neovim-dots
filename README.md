@@ -1,10 +1,10 @@
-### notes
+~~### notes~~
 ~~this is my neovim nix config using mnw (minimal neovim wrapper).~~
 
 ~~ive made the design architecture idiomatic to normal neovim, so the root directory of this project is AS IF one was in .config/nvim~~
 ~~this is much more preferable to mnw's way of handling things. this leads to calling an init.lua at the root, having a lua/ folder at the root, etc.~~
 
-### installation
+~~### installation~~
 ~~to run this config, use ``nix run github:re3quisitevariety:nvim-nix-dots``. you can also use ``nix profile install``, or add the configuration to your configuration.nix/home manager~~
 
 ---
