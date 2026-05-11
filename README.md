@@ -15,9 +15,21 @@ i think choosing to do the nix way of things as fucked with my head too much. go
 
 sometimes you do just have to start out inefficient.
 
+stuff you prob need right away:
+- toggleterm
+- conform
+
 big tasks:
 - lsps, treesitter, etc.
 - obsidian
+- blinkcmp, toggle it! 
+- trouble
+- and the BIGGEST task - wrapping the entire thing in nix, fully reproducible
+
+misc
+- theming (for the ricing gods)
+- which key (this is debatable, u might not even need it lol)
+- study the art of neovim, learn your way around the docs
 
 maybe ill just add a neovim module in my nixos dotfiles
 

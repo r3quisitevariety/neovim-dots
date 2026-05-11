@@ -18,3 +18,6 @@ vim.keymap.set('n', '<leader>w', '<cmd>set wrap!<cr>', { desc = 'Toggle word wra
 
 vim.opt.clipboard = "unnamedplus"
 
+
+
+
