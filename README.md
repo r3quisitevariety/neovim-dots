@@ -20,5 +20,6 @@ big tasks:
 - obsidian
 
 maybe ill just add a neovim module in my nixos dotfiles
+
 things ill keep in mind for the wrapper:
 - fzf, fd, ripgrep (for telescope)
