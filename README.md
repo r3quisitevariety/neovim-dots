@@ -16,14 +16,14 @@ i think choosing to do the nix way of things as fucked with my head too much. go
 sometimes you do just have to start out inefficient.
 
 stuff you prob need right away:
-- toggleterm
-- conform
+- ~~toggleterm~~
+- ~~conform~~
 
 big tasks:
 - lsps, treesitter, etc.
-- obsidian
+- ~~obsidian~~
 - blinkcmp, toggle it! 
-- trouble
+- trouble toggle
 - and the BIGGEST task - wrapping the entire thing in nix, fully reproducible
 
 misc
@@ -35,3 +35,7 @@ maybe ill just add a neovim module in my nixos dotfiles
 
 things ill keep in mind for the wrapper:
 - fzf, fd, ripgrep (for telescope)
+
+notes for you;
+- when adding a language, you have 4 things to consider;
+    - binaries called (nix), conform.nvim, lsp, and treesitter.
