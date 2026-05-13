@@ -6,7 +6,6 @@ require("config/lsp")
 
 vim.opt.relativenumber = true
 vim.g.mapleader = " "
-vim.opt.tabstop = 2
 
 vim.opt.expandtab = true -- Use spaces instead of tabs
 vim.opt.tabstop = 2 -- Visual width of a tab character
@@ -18,3 +17,5 @@ vim.opt.linebreak = true
 vim.keymap.set("n", "<leader>w", "<cmd>set wrap!<cr>", { desc = "Toggle word wrap" })
 
 vim.opt.clipboard = "unnamedplus"
+
+require("ibl").setup()
