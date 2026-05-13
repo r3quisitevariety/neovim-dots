@@ -1,6 +1,3 @@
--- set up rose pine!
-
---require("config/transparency")
 require("config/lazy")
 require("config/lsp")
 
@@ -18,4 +15,4 @@ vim.keymap.set("n", "<leader>w", "<cmd>set wrap!<cr>", { desc = "Toggle word wra
 
 vim.opt.clipboard = "unnamedplus"
 
-require("ibl").setup()
+require("ibl").setup() -- indent blanklines

@@ -1,41 +1,18 @@
-~~### notes~~
-~~this is my neovim nix config using mnw (minimal neovim wrapper).~~
+this is my raw neovim config that I plan to eventually wrap nix around. im using lazy.nvim with a decent amount of plugins for a pretty standard workflow.
 
-~~ive made the design architecture idiomatic to normal neovim, so the root directory of this project is AS IF one was in .config/nvim~~
-~~this is much more preferable to mnw's way of handling things. this leads to calling an init.lua at the root, having a lua/ folder at the root, etc.~~
 
-~~### installation~~
-~~to run this config, use ``nix run github:re3quisitevariety:nvim-nix-dots``. you can also use ``nix profile install``, or add the configuration to your configuration.nix/home manager~~
-
----
-
-okay, im not using nix and going raw neovim for now, eventually plan to make a pretty nix wrapper but for now we keep it simple.
-
-i think choosing to do the nix way of things as fucked with my head too much. gotta learn how to iterate faster and when, instead of clouding myself in paralysis by analysis trying to be everything. 
-
-sometimes you do just have to start out inefficient.
-
-stuff you prob need right away:
-- ~~toggleterm~~
-- ~~conform~~
-
-big tasks:
-- lsps, treesitter, etc.
+tasks:
+- refresh vimtutor
+- ~~lsps, treesitter, etc.~~
 - ~~obsidian~~
 - blinkcmp, toggle it! 
-- trouble toggle
+- ~~trouble toggle/learn how to use in general~~
+- stop nvimtree from warning you every time you make a filechange
+- ~~obsidian daily note timestamp~~
 - and the BIGGEST task - wrapping the entire thing in nix, fully reproducible
+- ~~theming (for the ricing gods)~~
+- ~~which key (this is debatable, u might not even need it lol)~~
 
-misc
-- theming (for the ricing gods)
-- which key (this is debatable, u might not even need it lol)
-- study the art of neovim, learn your way around the docs
-
-maybe ill just add a neovim module in my nixos dotfiles
-
-things ill keep in mind for the wrapper:
-- fzf, fd, ripgrep (for telescope)
-
-notes for you;
+notes for myself;
 - when adding a language, you have 4 things to consider;
     - binaries called (nix), conform.nvim, lsp, and treesitter.
