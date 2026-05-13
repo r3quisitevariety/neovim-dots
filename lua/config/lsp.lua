@@ -22,9 +22,15 @@ vim.lsp.config("nix", {
 	root_markers = { "flake.nix", "flake.lock", ".git", "default.nix" },
 })
 
+vim.lsp.config["harper"] = {
+	cmd = { "harper-ls", "--stdio" },
+	filetypes = { "markdown", "text", "tex", "typst" },
+}
+
 -- ENABLE / DISABLE LANGUAGES --
 --------------------------------------------
 vim.lsp.enable("luals") -- calls the config
 vim.lsp.enable("rust")
 vim.lsp.enable("tsserver")
 vim.lsp.enable("nix")
+--vim.lsp.enable("harper")
