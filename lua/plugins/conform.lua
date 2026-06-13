@@ -10,6 +10,7 @@ return {
 			--nix = { "nixfmt" },
 			nix = { "alejandra" },
 			lua = { "stylua" },
+			go = { "gofmt" }, -- already comes with go binary
 		},
 	},
 	-- still see if this actually works, havent set up lsp yet

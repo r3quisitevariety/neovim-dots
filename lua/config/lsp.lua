@@ -27,10 +27,17 @@ vim.lsp.config["harper"] = {
 	filetypes = { "markdown", "text", "tex", "typst" },
 }
 
+vim.lsp.config("gopls", {
+	cmd = { "gopls" },
+	filetypes = { "go", "gomod", "gowork", "gotmpl" },
+	root_markers = { "go.work", "go.mod", ".git" },
+})
+
 -- ENABLE / DISABLE LANGUAGES --
 --------------------------------------------
 vim.lsp.enable("luals") -- calls the config
 vim.lsp.enable("rust")
 vim.lsp.enable("tsserver")
 vim.lsp.enable("nix")
+vim.lsp.enable("gopls")
 --vim.lsp.enable("harper")

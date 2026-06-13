@@ -3,7 +3,7 @@ return {
 	build = ":TSUpdate",
 	event = { "BufReadPre", "BufNewFile" },
 	opts = {
-		ensure_installed = { "markdown", "markdown_inline", "nix", "rust", "typescript" },
+		ensure_installed = { "markdown", "markdown_inline", "nix", "rust", "typescript", "go" },
 		highlight = { enable = true },
 	},
 }
