@@ -41,7 +41,10 @@ lua/
 | [telescope.nvim](https://github.com/nvim-telescope/telescope.nvim) | Fuzzy finder (files, grep, buffers, help) |
 | [toggleterm.nvim](https://github.com/akinsho/toggleterm.nvim) | Floating/terminal (`<C-Space>`) |
 | [nvim-treesitter](https://github.com/nvim-treesitter/nvim-treesitter) | Syntax highlighting for markdown, nix, rust, typescript, go |
+| [bufferline.nvim](https://github.com/akinsho/bufferline.nvim) | Tab bar (VSCode-style buffer tabs) |
+| [gitsigns.nvim](https://github.com/lewis6991/gitsigns.nvim) | Git blame, diff markers, signs in gutter |
 | [trouble.nvim](https://github.com/folke/trouble.nvim) | Diagnostics, symbols & LSP viewer |
+| [which-key.nvim](https://github.com/folke/which-key.nvim) | Keybinding popup on `<leader>` pause |
 | [friendly-snippets](https://github.com/rafamadriz/friendly-snippets) | Snippet collection (blink.cmp dependency) |
 | [plenary.nvim](https://github.com/nvim-lua/plenary.nvim) | Utility library (telescope dependency) |
 | [telescope-fzf-native.nvim](https://github.com/nvim-telescope/telescope-fzf-native.nvim) | Faster telescope sorter |
@@ -56,6 +59,7 @@ lua/
 | `<leader>fb` | List buffers |
 | `<leader>fh` | Help tags |
 | `<C-Space>` | Toggle terminal |
+| `<Tab>` / `<S-Tab>` | Next / previous buffer |
 | `<leader>w` | Toggle word wrap |
 
 ### LSP (buffer-local, only when LSP attached)
