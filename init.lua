@@ -17,4 +17,12 @@ vim.keymap.set("n", "<leader>w", "<cmd>set wrap!<cr>", { desc = "Toggle word wra
 
 vim.opt.clipboard = "unnamedplus"
 
+vim.opt.autoread = true
+vim.api.nvim_create_autocmd({ "FocusGained", "BufEnter", "VimResume" }, {
+	group = vim.api.nvim_create_augroup("auto-reload", { clear = true }),
+	callback = function()
+		vim.cmd.checktime()
+	end,
+})
+
 require("ibl").setup() -- indent blanklines
