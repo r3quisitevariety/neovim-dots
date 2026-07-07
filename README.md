@@ -1,3 +1,5 @@
+sorry for the vibecoded readme, i regret making it lol. i think its better to write your own prose (mostly) when it comes to documentation; this represents outdated views of mine.
+
 # nvim config
 
 Managed by [lazy.nvim](https://github.com/folke/lazy.nvim). Plugin specs live in `lua/plugins/*.lua` — lazy.nvim auto-imports them all. Config modules are in `lua/config/`.
