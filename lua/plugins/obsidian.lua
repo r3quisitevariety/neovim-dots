@@ -6,7 +6,7 @@ return {
 		{
 			"<leader>dt",
 			function()
-				local date_str = os.date("%A, [[%B %-d, %Y]], %I:%M %p")
+				local date_str = os.date("*%A, %B %-d, %Y, %I:%M %p*")
 				vim.api.nvim_put({ date_str }, "l", true, true)
 			end,
 			desc = "Insert date-time stamp",
@@ -18,7 +18,7 @@ return {
 		workspaces = {
 			{
 				name = "obsidian",
-				path = "~/Documents/obsidian",
+				path = "~/Documents/masterplan",
 			},
 		},
 
@@ -28,9 +28,9 @@ return {
 
 		daily_notes = {
 			enabled = true,
-			folder = "zzz/dailynotes",
-			date_format = "%B %-d, %Y",
-			default_tags = "type/dailynotes",
+			folder = "_system/periodic/daily",
+			--date_format = "%B %-d, %Y",
+			--default_tags = "type/dailynotes",
 		},
 	},
 }
