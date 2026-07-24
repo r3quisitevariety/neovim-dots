@@ -1,7 +1,7 @@
 
 # nvim config
 
-Managed by [lazy.nvim](https://github.com/folke/lazy.nvim). Plugin specs live in `lua/plugins/*.lua` — lazy.nvim auto-imports them all. Config modules are in `lua/config/`.
+Managed by [lazy.nvim](https://github.com/folke/lazy.nvim). Plugin specs live in `lua/plugins/` — lazy.nvim auto-imports them all. Config modules are in `lua/config/`.
 
 try it out by running `nix run github:r3quisitevariety/neovim-dots`
 
