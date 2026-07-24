@@ -7,6 +7,8 @@ try it out by running `nix run github:r3quisitevariety/neovim-dots`
 
 ## Keymaps
 
+leader key is space.
+
 | Key | Action |
 |---|---|
 | `<leader>e` | Toggle file tree |
