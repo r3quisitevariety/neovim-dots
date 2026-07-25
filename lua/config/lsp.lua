@@ -23,7 +23,10 @@ vim.lsp.config("nix", {
 	settings = {
 		["nil"] = {
 			nix = {
-				autoArchive = true, -- Automatically fetch inputs, suppressing the popup
+				flake = {
+					enable = true,
+					autoArchive = true,
+				},
 			},
 		},
 	},
