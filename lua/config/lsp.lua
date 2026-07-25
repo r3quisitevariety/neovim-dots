@@ -20,6 +20,13 @@ vim.lsp.config("nix", {
 	cmd = { "nil" },
 	filetypes = { "nix" },
 	root_markers = { "flake.nix", "flake.lock", ".git", "default.nix" },
+	settings = {
+		["nil"] = {
+			nix = {
+				autoArchive = true, -- Automatically fetch inputs, suppressing the popup
+			},
+		},
+	},
 })
 
 vim.lsp.config["harper"] = {
