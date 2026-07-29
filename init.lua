@@ -1,6 +1,10 @@
 require("config/lazy")
 require("config/lsp")
 
+vim.opt.swapfile = false -- Disables swap files
+vim.opt.backup = true -- Makes a backup before overwriting a file
+vim.opt.undofile = true -- Saves undo history even after closing Neovim
+
 vim.opt.relativenumber = true
 vim.opt.number = true
 
