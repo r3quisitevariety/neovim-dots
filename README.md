@@ -8,7 +8,7 @@ Managed by [lazy.nvim](https://github.com/folke/lazy.nvim). Plugins live in `lua
 try it out by running:
 ```nix
 export NIX_CONFIG="experimental-features = nix-command flakes"
-nix run github:r3quisitevariety/neovim-dots
+nix run github:r3quisitevariety/nvim
 ```
 
 ## Keymaps
