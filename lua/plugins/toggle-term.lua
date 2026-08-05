@@ -7,7 +7,7 @@ return {
 			{ "<C-Space>", "<cmd>ToggleTerm<CR>", { desc = "Toggle Terminal" } },
 		},
 		opts = {
-			size = 20,
+			size = 30,
 			open_mapping = [[<C-Space>]],
 			--direction = "tab",
 			hide_numbers = true,
