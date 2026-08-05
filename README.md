@@ -23,14 +23,7 @@ leader key is space.
 | `<leader>fg` | Live grep (ripgrep) |
 | `<leader>fb` | List buffers |
 | `<leader>fh` | Help tags |
-| `<Tab>` / `<S-Tab>` | Next / previous buffer |
 | `<leader>w` | Toggle word wrap |
-| `K` | LSP hover documentation |
-| `gd` | LSP go to definition |
-| `gr` | LSP references |
-| `<leader>rn` | LSP rename symbol |
-| `<leader>ca` | LSP code action |
-| `[d` / `]d` | Previous / next diagnostic |
 
 ### LSP
 
