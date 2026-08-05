@@ -25,6 +25,25 @@ leader key is space.
 | `<leader>fh` | Help tags |
 | `<Tab>` / `<S-Tab>` | Next / previous buffer |
 | `<leader>w` | Toggle word wrap |
+| `K` | LSP hover documentation |
+| `gd` | LSP go to definition |
+| `gr` | LSP references |
+| `<leader>rn` | LSP rename symbol |
+| `<leader>ca` | LSP code action |
+| `[d` / `]d` | Previous / next diagnostic |
+
+### LSP
+
+| Key | Action |
+|---|---|
+| `K` | Show documentation and signatures |
+| `gd` | Go to symbol definition |
+| `gr` | List symbol references |
+| `<leader>rn` | Rename symbol and references |
+| `<leader>ca` | Open code actions and refactorings |
+| `[d` / `]d` | Previous / next diagnostic |
+
+note that formatting is handled separately by conform.
 
 ### Obsidian
 
