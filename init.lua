@@ -27,5 +27,5 @@ vim.api.nvim_create_autocmd({ "FocusGained", "BufEnter", "VimResume" }, {
 		vim.cmd.checktime()
 	end,
 })
-
+require("oil").setup()
 require("ibl").setup() -- indent blanklines
