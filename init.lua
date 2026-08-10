@@ -42,6 +42,10 @@ local function make_transparent()
 		"EndOfBuffer",
 		"NeoTreeNormal",
 		"NeoTreeNormalNC",
+		"LineNr",
+		"CursorLineNr",
+		"LineNrAbove",
+		"LineNrBelow",
 	}
 	for _, group in ipairs(groups) do
 		vim.api.nvim_set_hl(0, group, { bg = "NONE", ctermbg = "NONE" })
