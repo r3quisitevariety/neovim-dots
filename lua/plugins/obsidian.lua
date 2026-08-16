@@ -15,6 +15,9 @@ return {
 
 	opts = {
 		legacy_commands = false,
+		frontmatter = {
+			enabled = false,
+		},
 		workspaces = {
 			{
 				name = "obsidian",
