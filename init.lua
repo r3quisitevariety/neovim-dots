@@ -18,6 +18,13 @@ vim.opt.linebreak = true
 
 vim.keymap.set("n", "<leader>w", "<cmd>set wrap!<cr>", { desc = "Toggle word wrap" })
 
+-- so i can do `1g` instead of `1gt`
+for tab = 1, 9 do
+	vim.keymap.set("n", tab .. "g", "<cmd>tabnext " .. tab .. "<cr>", {
+		desc = "Go to tab " .. tab,
+	})
+end
+
 vim.opt.clipboard = "unnamedplus"
 
 vim.opt.autoread = true
