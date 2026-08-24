@@ -1,5 +1,5 @@
 {
-  description = "Reproducible Neovim with LSPs, formatters, and tools (r3quisitevariety/neovim-dots)";
+  description = "swag neovim config";
 
   inputs.nixpkgs.url = "https://channels.nixos.org/nixos-unstable/nixexprs.tar.zst";
 
@@ -28,7 +28,7 @@
         rustup
         go
 
-        # LSPs (note: `harper` ships both `harper-cli` and `harper-ls`)
+        # lsp
         lua-language-server
         rust-analyzer
         gopls

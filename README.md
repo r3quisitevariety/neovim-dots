@@ -9,6 +9,8 @@ export NIX_CONFIG="experimental-features = nix-command flakes"
 nix run github:r3quisitevariety/nvim
 ```
 
+or `nix run github:r3quisitevariety/neovim-dots#shell` for an interactive shell in your `$PATH`
+
 alternatively, run `git clone https://github.com/r3quisitevariety/nvim` in `~/.config` (ensuring previous nvim config is backed up). make sure you have all the necessary lsp servers installed.
 
 ## Keymaps
