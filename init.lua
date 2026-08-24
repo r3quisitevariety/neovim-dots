@@ -25,6 +25,8 @@ for tab = 1, 9 do
 	})
 end
 
+vim.opt.fillchars:append({ eob = " " })
+
 vim.opt.clipboard = "unnamedplus"
 
 vim.opt.autoread = true
