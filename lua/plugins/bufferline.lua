@@ -1,14 +1,12 @@
 return {
 	"akinsho/bufferline.nvim",
 	version = "*",
+	lazy = false,
 	dependencies = { "nvim-tree/nvim-web-devicons" },
-	keys = {
-		{ "<Tab>", "<Cmd>BufferLineCycleNext<CR>", desc = "Next buffer" },
-		{ "<S-Tab>", "<Cmd>BufferLineCyclePrev<CR>", desc = "Previous buffer" },
-	},
 	opts = {
 		options = {
-			themable = true,
+			mode = "tabs",
+			themable = false,
 			diagnostics = "nvim_lsp",
 			diagnostics_indicator = function(count)
 				return " " .. count

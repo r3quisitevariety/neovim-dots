@@ -30,7 +30,6 @@ vim.api.nvim_create_autocmd({ "FocusGained", "BufEnter", "VimResume" }, {
 require("oil").setup()
 require("ibl").setup() -- indent blanklines
 vim.opt.termguicolors = true
-require("bufferline").setup({})
 
 -- makes neovim transparent
 local function make_transparent()
