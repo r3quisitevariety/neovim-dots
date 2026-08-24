@@ -26,11 +26,14 @@
 
         # toolchains
         rustup
+        go
 
         # LSPs (note: `harper` ships both `harper-cli` and `harper-ls`)
         lua-language-server
+        rust-analyzer
         gopls
         nil
+        typescript
         typescript-language-server
         harper
 
@@ -65,12 +68,22 @@
       default = makeApp system "neovim" ''
         set -e
 
+        nativeXdgConfigHome=''${XDG_CONFIG_HOME:-$HOME/.config}
+
         # Writable, isolated XDG_CONFIG_HOME so we use the flake's nvim config
         # without touching the user's real ~/.config/nvim. Lazy.nvim will still
         # install plugins to the persistent XDG_DATA_HOME (~/.local/share).
         export XDG_CONFIG_HOME="$(mktemp -d -t neovim-dots.XXXXXX)"
         cp -rL ${nvimConfig} "$XDG_CONFIG_HOME/nvim"
         chmod -R u+w "$XDG_CONFIG_HOME/nvim"
+
+        # Keep native user configuration available while isolating Neovim.
+        for config in "$nativeXdgConfigHome"/* "$nativeXdgConfigHome"/.[!.]* "$nativeXdgConfigHome"/..?*; do
+          [ -e "$config" ] || [ -L "$config" ] || continue
+          name="''${config##*/}"
+          [ "$name" = nvim ] && continue
+          ln -s "$config" "$XDG_CONFIG_HOME/$name"
+        done
 
         # Put all the LSPs, formatters, and toolchain binaries on PATH.
         export PATH="${toolsEnv system}/bin:$PATH"
@@ -82,16 +95,23 @@
       shell = makeApp system "neovim-shell" ''
         set -e
 
+        nativeXdgConfigHome=''${XDG_CONFIG_HOME:-$HOME/.config}
+
         export XDG_CONFIG_HOME="$(mktemp -d -t neovim-dots.XXXXXX)"
         cp -rL ${nvimConfig} "$XDG_CONFIG_HOME/nvim"
         chmod -R u+w "$XDG_CONFIG_HOME/nvim"
+        for config in "$nativeXdgConfigHome"/* "$nativeXdgConfigHome"/.[!.]* "$nativeXdgConfigHome"/..?*; do
+          [ -e "$config" ] || [ -L "$config" ] || continue
+          name="''${config##*/}"
+          [ "$name" = nvim ] && continue
+          ln -s "$config" "$XDG_CONFIG_HOME/$name"
+        done
         export PATH="${toolsEnv system}/bin:$PATH"
 
-        export PS1="[neovim-dots] \w$ "
         echo "Neovim-dots shell. All LSPs and formatters are on PATH."
         echo "Run \`nvim\` to launch the editor, or \`exit\` to leave."
 
-        exec ${pkgsFor.${system}.bashInteractive}/bin/bash --noprofile --norc
+        exec "''${SHELL:-sh}" -i
       '';
     });
 
