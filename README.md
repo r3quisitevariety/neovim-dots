@@ -11,6 +11,8 @@ export NIX_CONFIG="experimental-features = nix-command flakes"
 nix run github:r3quisitevariety/nvim
 ```
 
+alternatively, run `git clone https://github.com/r3quisitevariety/nvim` in `~/.config` (ensuring previous nvim config is backed up) 
+
 ## Keymaps
 
 leader key is space.
