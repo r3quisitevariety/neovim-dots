@@ -24,16 +24,13 @@
         ripgrep
         fd
 
-        # toolchains
-        rustup
-        go
-
-        # lsp
+        # lsps
+        # make sure you have toolchains for go, rust, etc in your system for things to fully work
+        # i omitted them here for the sake of minimizing closure size
         lua-language-server
         rust-analyzer
         gopls
         nil
-        typescript
         typescript-language-server
         harper
 
@@ -42,9 +39,6 @@
         prettier
         nixfmt
         alejandra
-
-        # language runtimes / binaries the LSPs/formatters shell out to
-        nodejs
 
         # plugin manager bootstrap (lazy.nvim clones itself with git)
         git
