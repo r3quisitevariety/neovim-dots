@@ -7,7 +7,7 @@ return {
 			delay = 500,
 			virt_text_pos = "eol",
 		},
-		current_line_blame_formatter = "<author>, <author_time:%R> • <summary>",
+		current_line_blame_formatter = " <author>, <author_time:%R> • <summary>",
 
 		on_attach = function(bufnr)
 			local gs = require("gitsigns")
@@ -23,7 +23,7 @@ return {
 
 			map("n", "<leader>hp", gs.preview_hunk, "Preview changed hunk")
 			map("n", "<leader>hb", gs.blame_line, "Blame current line")
-			map("n", "<leader>hd", gs.diffthis, "Diff current file")
+			map("n", "<leader>gd", gs.diffthis, "Diff current file")
 			map("n", "<leader>hs", gs.stage_hunk, "Stage hunk")
 			map("n", "<leader>hr", gs.reset_hunk, "Reset hunk")
 		end,
