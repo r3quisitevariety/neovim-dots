@@ -23,7 +23,7 @@ return {
 
 			map("n", "<leader>hp", gs.preview_hunk, "Preview changed hunk")
 			map("n", "<leader>hb", gs.blame_line, "Blame current line")
-			map("n", "<leader>gd", gs.diffthis, "Diff current file")
+			map("n", "<leader>hd", gs.diffthis, "Diff current file")
 			map("n", "<leader>hs", gs.stage_hunk, "Stage hunk")
 			map("n", "<leader>hr", gs.reset_hunk, "Reset hunk")
 		end,
