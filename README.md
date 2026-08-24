@@ -3,29 +3,56 @@
 
 Managed by [lazy.nvim](https://github.com/folke/lazy.nvim). Plugins live in `lua/plugins/` — lazy.nvim auto-imports them all. Configuration for lsp & lazy lives in `lua/config/`, whilst the `init.lua` contains basic keybindings and vim options. 
 
-
-
 try it out by running:
 ```nix
 export NIX_CONFIG="experimental-features = nix-command flakes"
 nix run github:r3quisitevariety/nvim
 ```
 
-alternatively, run `git clone https://github.com/r3quisitevariety/nvim` in `~/.config` (ensuring previous nvim config is backed up) 
+alternatively, run `git clone https://github.com/r3quisitevariety/nvim` in `~/.config` (ensuring previous nvim config is backed up). make sure you have all the necessary lsp servers installed.
 
 ## Keymaps
 
 leader key is space.
 
+### General
+
 | Key | Action |
 |---|---|
 | `<leader>e` | Toggle file tree |
 | `<C-Space>` | Toggle terminal |
-| `<leader>ff` | Find files |
-| `<leader>fg` | Live grep (ripgrep) |
-| `<leader>fb` | List buffers |
-| `<leader>fh` | Help tags |
 | `<leader>w` | Toggle word wrap |
+| `1g` ... `9g` | Go to tab 1 ... 9 |
+| `q` | Flash jump |
+
+### Search
+
+| Key | Action |
+|---|---|
+| `<leader>ff` | Find files |
+| `<leader>fg` | Live grep |
+| `<leader>fb` | List buffers |
+| `<leader>fh` | Search help tags |
+
+### Git
+
+| Key | Action |
+|---|---|
+| `<leader>lg` | Open LazyGit |
+| `]h` / `[h` | Next / previous changed hunk |
+| `<leader>hp` | Preview changed hunk |
+| `<leader>hb` | Blame current line |
+| `<leader>hd` | Diff current file |
+| `<leader>hs` | Stage hunk |
+| `<leader>hr` | Reset hunk |
+
+### Gitpad
+
+| Key | Action |
+|---|---|
+| `<leader>pp` | Toggle project notes |
+| `<leader>pb` | Toggle branch notes |
+| `<leader>pf` | Toggle notes for the current file |
 
 ### LSP
 
