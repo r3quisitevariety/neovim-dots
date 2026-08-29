@@ -18,6 +18,7 @@ return {
 			json = { "prettier" },
 			html = { "prettier" },
 			css = { "prettier" },
+			kdl = { "kdlfmt" },
 		},
 	},
 	-- still see if this actually works, havent set up lsp yet
