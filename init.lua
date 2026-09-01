@@ -1,5 +1,7 @@
 require("config/lazy")
 require("config/lsp")
+require("oil").setup()
+require("ibl").setup() -- indent blanklines
 
 vim.opt.swapfile = false -- Disables swap files
 vim.opt.undofile = true -- Saves undo history even after closing Neovim
@@ -30,14 +32,15 @@ vim.opt.fillchars:append({ eob = " " })
 vim.opt.clipboard = "unnamedplus"
 
 vim.opt.autoread = true
+
+--autodetects changes in current file
 vim.api.nvim_create_autocmd({ "FocusGained", "BufEnter", "VimResume" }, {
 	group = vim.api.nvim_create_augroup("auto-reload", { clear = true }),
 	callback = function()
 		vim.cmd.checktime()
 	end,
 })
-require("oil").setup()
-require("ibl").setup() -- indent blanklines
+
 vim.opt.termguicolors = true
 
 -- makes neovim transparent
