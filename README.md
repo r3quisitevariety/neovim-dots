@@ -1,7 +1,10 @@
 
 # nvim config
 
-Managed by [lazy.nvim](https://github.com/folke/lazy.nvim). Plugins live in `lua/plugins/` — lazy.nvim auto-imports them all. Configuration for lsp & lazy lives in `lua/config/`, whilst the `init.lua` contains basic keybindings and vim options. 
+- utilizes [lazy.nvim](https://github.com/folke/lazy.nvim) 
+- plugins live in `lua/plugins/` which are auto-imported by lazy.nvim
+- configuration for lsp & lazy.nvim's bootstrap lives in `lua/config/` 
+- top level `init.lua` for everything else (cant be bothered to organize it)
 
 try it out by running:
 ```nix
